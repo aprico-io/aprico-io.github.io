@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body class="font-aspekta antialiased bg-white text-slate-800 font-[350]">
+        
+        <!-- Page wrapper -->
+        <div class="flex flex-col min-h-screen overflow-hidden">
+            
+            <!-- Site header -->
+            {{- partial "header.html" . -}}
+            
+            <!-- Page content -->
+            <main class="grow">
+            Contact Page
+            </main>
+
+            <!-- Site footer -->
+            {{- partial "footer.html" . -}}
+        </div>
+
+        <script src="./js/vendors/alpinejs.min.js" defer></script>
+        <script src="./js/vendors/aos.js"></script>
+        <script src="./js/vendors/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
