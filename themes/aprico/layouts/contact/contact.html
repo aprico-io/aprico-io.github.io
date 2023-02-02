@@ -1,0 +1,104 @@
+{{ define "main" }}
+<section class="relative">
+<div class="absolute inset-0 rounded-bl-[100px] mb-28 md:mb-0 bg-gradient-to-tr from-blue-600 to-blue-500 pointer-events-none -z-10" aria-hidden="true"></div>
+
+ <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="pt-36 md:pt-40 md:pb-20">
+
+          <!-- Hero content -->
+          <div class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left">
+
+              <!-- Content -->
+              <div class="md:w-[600px]">
+        <h1 clas="h1 text-white mb-6" data-aos="fade-up" data-aos-delay="100">{{ .Title }}</h1>
+<div class="container"> 
+                  <!-- Copy -->
+
+                  <!-- Buttons -->
+                  <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-0" data-aos="fade-up" data-aos-delay="300">
+                      <div>
+                          <a class="btn-sm w-full inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 group shadow-sm" href="contact">
+                              Get started
+                              <span class="tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
+                                  <svg class="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
+                                  </svg>
+                              </span>
+                          </a>
+                      </div>
+                  </div>
+
+              </div>
+
+ <div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      {{ .Content }}
+      <ul>
+        {{ if .Site.Data.contact.phone }}
+        <li><strong>Phone: </strong>{{ .Site.Data.contact.phone }}</li>
+        {{ end }}
+        {{ if .Site.Data.contact.email }}
+        <li><strong>Email: </strong><a href="mailto:{{ .Site.Data.contact.email }}">
+            {{ .Site.Data.contact.email }}</a></li>
+        {{ end }}
+        {{ if .Site.Data.contact.address }}
+        <li style="white-space: pre-wrap;"><strong>Address: </strong><br>{{ .Site.Data.contact.address }}</li>
+        {{ end }}
+      </ul>
+      {{ if .Site.Data.contact.hours }}
+      <h4 class="mt-4">Business Hours</h4>
+      <table class="table table-sm opening-hours-table">
+        {{ range .Site.Data.contact.hours }}
+        <tr>
+          <td class="day font-weight-bold">{{ .day }}</td>
+          <td class="opens">{{ .open }}</td>
+          <td>-</td>
+          <td class="closes">{{ .close }}</td>
+        </tr>
+        {{ end }}
+      </table>
+      {{ end }}
+    </div>
+  </div>
+</div>
+             <!-- Image -->
+
+          </div>
+
+      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <!--{{ .Content }}
+      <ul>
+        {{ if .Site.Data.contact.phone }}
+        <li><strong>Phone: </strong>{{ .Site.Data.contact.phone }}</li>
+        {{ end }}
+        {{ if .Site.Data.contact.email }}
+        <li><strong>Email: </strong><a href="mailto:{{ .Site.Data.contact.email }}">
+            {{ .Site.Data.contact.email }}</a></li>
+        {{ end }}
+        {{ if .Site.Data.contact.address }}
+        <li style="white-space: pre-wrap;"><strong>Address: </strong><br>{{ .Site.Data.contact.address }}</li>
+        {{ end }}
+      </ul>
+      {{ if .Site.Data.contact.hours }}
+      <h4 class="mt-4">Business Hours</h4>
+      <table class="table table-sm opening-hours-table">
+        {{ range .Site.Data.contact.hours }}
+        <tr>
+          <td class="day font-weight-bold">{{ .day }}</td>
+          <td class="opens">{{ .open }}</td>
+          <td>-</td>
+          <td class="closes">{{ .close }}</td>
+        </tr>
+        {{ end }}
+      </table>
+      {{ end }}
+      -->
+    </div>
+  </div>
+</div>
+<section>
+{{ end }}
