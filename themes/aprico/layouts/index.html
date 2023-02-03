@@ -1,348 +1,522 @@
-{{ define "main" }}  
+{{ define "main" }}
 <!-- Hero -->
 <section class="relative">
-
   <!-- Bg -->
-  <div class="absolute inset-0 rounded-bl-[100px] mb-28 md:mb-0 bg-gradient-to-tr from-blue-600 to-blue-500 pointer-events-none -z-10" aria-hidden="true"></div>
+  <div
+    class="absolute inset-0 rounded-bl-[100px] mb-28 md:mb-0 bg-gradient-to-tr from-blue-600 to-blue-500 pointer-events-none -z-10"
+    aria-hidden="true"
+  ></div>
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="pt-36 md:pt-40 md:pb-20">
+    <div class="pt-36 md:pt-40 md:pb-20">
+      <!-- Hero content -->
+      <div
+        class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left"
+      >
+        <!-- Content -->
+        <div class="md:w-[600px]">
+          <!-- Copy -->
+          <h1
+            class="h1 text-white mb-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Present and close deals
+            <span class="relative inline-flex items-center justify-center">
+              <svg
+                class="absolute -z-10"
+                width="246"
+                height="76"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M55.224 10.087c-13.986 3.38-25.552 7.614-33.97 12.438-4.171 2.412-7.508 4.953-9.953 7.58-2.395 2.628-3.807 5.332-4.21 8.058-.266 1.99.075 3.985 1.02 5.955.922 1.973 2.37 3.919 4.327 5.819 7.028 6.749 20.696 12.657 39.108 16.904 18.475 4.28 40.791 6.693 63.89 6.91 20.527.186 40.83-1.353 58.737-4.452 11.396-1.964 21.73-4.463 30.631-7.407 8.905-2.941 16.508-6.232 22.611-9.788 3.663-2.222 4.978-1.73 3.59.491-1.13 1.509-2.83 2.971-5.067 4.357-3.235 1.976-7.254 3.82-11.962 5.49-4.686 1.628-9.745 3.15-15.139 4.553a273.749 273.749 0 0 1-17.309 3.752 339.58 339.58 0 0 1-19.111 2.822c-3.367.35-6.676.738-10.087 1.025-3.412.286-6.868.546-10.339.75-13.955.815-28.266.87-42.283.165-13.996-.735-27.452-2.236-39.729-4.435-14.867-2.672-27.78-6.263-37.927-10.548-10.21-4.343-17.115-9.34-20.204-14.618C.15 43.028-.38 40.095.268 37.176c.295-1.462.868-2.917 1.713-4.357.883-1.432 2.027-2.847 3.427-4.239 2.819-2.783 6.622-5.463 11.342-7.99 4.626-2.528 10.101-4.9 16.335-7.074C48.423 8.116 68.15 4.072 90.24 1.802A371.99 371.99 0 0 1 115.924.135c54.806-1.437 105.87 8.691 124.34 24.662 1.911 1.728 3.392 3.498 4.431 5.295 1.352 2.388 1.655 4.82.901 7.234-.223 1.092-1.189 2.158-2.836 3.127-.493.309-1.076.603-1.742.88-.916.272-1.27-.27-1.344-1.462-.074-1.193 0-3.05-.429-5.409-.722-3.525-3.213-6.994-7.384-10.284-4.32-3.334-10.299-6.44-17.723-9.206-7.488-2.813-16.364-5.247-26.304-7.211-9.952-1.996-20.87-3.493-32.344-4.434-17.147-1.405-35.144-1.505-52.444-.292-8.673.62-17.094 1.537-25.108 2.732-7.997 1.207-15.556 2.672-22.552 4.37l-.162-.05Z"
+                  fill="#2DD4BF"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              faster
+            </span>
+          </h1>
+          <p
+            class="text-lg text-blue-200 mb-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Aprico simplifies the process of closing usage-based deals
+            <br class="hidden md:block" />
+            by eliminating obstacles in quoting and negotiation stages
+          </p>
 
-          <!-- Hero content -->
-          <div class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left">
-          
-              <!-- Content -->
-              <div class="md:w-[600px]">
-
-                  <!-- Copy -->
-                  <h1 class="h1 text-white mb-6" data-aos="fade-up" data-aos-delay="100">Present and close deals <span class="relative inline-flex items-center justify-center">
-                    <svg class="absolute -z-10" width="246" height="76" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M55.224 10.087c-13.986 3.38-25.552 7.614-33.97 12.438-4.171 2.412-7.508 4.953-9.953 7.58-2.395 2.628-3.807 5.332-4.21 8.058-.266 1.99.075 3.985 1.02 5.955.922 1.973 2.37 3.919 4.327 5.819 7.028 6.749 20.696 12.657 39.108 16.904 18.475 4.28 40.791 6.693 63.89 6.91 20.527.186 40.83-1.353 58.737-4.452 11.396-1.964 21.73-4.463 30.631-7.407 8.905-2.941 16.508-6.232 22.611-9.788 3.663-2.222 4.978-1.73 3.59.491-1.13 1.509-2.83 2.971-5.067 4.357-3.235 1.976-7.254 3.82-11.962 5.49-4.686 1.628-9.745 3.15-15.139 4.553a273.749 273.749 0 0 1-17.309 3.752 339.58 339.58 0 0 1-19.111 2.822c-3.367.35-6.676.738-10.087 1.025-3.412.286-6.868.546-10.339.75-13.955.815-28.266.87-42.283.165-13.996-.735-27.452-2.236-39.729-4.435-14.867-2.672-27.78-6.263-37.927-10.548-10.21-4.343-17.115-9.34-20.204-14.618C.15 43.028-.38 40.095.268 37.176c.295-1.462.868-2.917 1.713-4.357.883-1.432 2.027-2.847 3.427-4.239 2.819-2.783 6.622-5.463 11.342-7.99 4.626-2.528 10.101-4.9 16.335-7.074C48.423 8.116 68.15 4.072 90.24 1.802A371.99 371.99 0 0 1 115.924.135c54.806-1.437 105.87 8.691 124.34 24.662 1.911 1.728 3.392 3.498 4.431 5.295 1.352 2.388 1.655 4.82.901 7.234-.223 1.092-1.189 2.158-2.836 3.127-.493.309-1.076.603-1.742.88-.916.272-1.27-.27-1.344-1.462-.074-1.193 0-3.05-.429-5.409-.722-3.525-3.213-6.994-7.384-10.284-4.32-3.334-10.299-6.44-17.723-9.206-7.488-2.813-16.364-5.247-26.304-7.211-9.952-1.996-20.87-3.493-32.344-4.434-17.147-1.405-35.144-1.505-52.444-.292-8.673.62-17.094 1.537-25.108 2.732-7.997 1.207-15.556 2.672-22.552 4.37l-.162-.05Z" fill="#2DD4BF" fill-rule="nonzero" />
-                    </svg>
-                    faster
-                </span></h1>
-                  <p class="text-lg text-blue-200 mb-8" data-aos="fade-up" data-aos-delay="200">
-                    Aprico simplifies the process of closing usage-based deals <br class="hidden md:block" /> by eliminating obstacles in quoting and negotiation stages
-                  </p>
-
-                  <!-- Buttons -->
-                  <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-0" data-aos="fade-up" data-aos-delay="300">
-                      <div>
-                          <a class="btn-sm w-full inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 group shadow-sm" href="contact">
-                              Get started
-                              <span class="tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
-                                  <svg class="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
-                                  </svg>
-                              </span>
-                          </a>
-                      </div>
-                  </div>
-                  
-              </div>
-          
-              <!-- Image -->
-              <div class="max-w-sm mx-auto md:max-w-none md:absolute md:left-[600px] md:top-0 -mb-12 md:-mt-12 md:mb-0">
-                  <div class="relative -ml-3 -mr-24 md:mx-0">
-                      <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mt-16 md:mt-0 pointer-events-none -z-10 max-w-none mix-blend-lighten" src="./images/hero-illustration.svg" width="960" height="960" aria-hidden="true" />
-                      <img src="./images/screenshots/hero-quote.png" class="md:max-w-none rounded-md shadow-2xl" width="548" height="545" alt="Credit card" data-aos="fade-up" />
-                  </div>
-              </div>
-          
+          <!-- Buttons -->
+          <div
+            class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-0"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div>
+              <a
+                class="btn-sm w-full inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 group shadow-sm"
+                href="contact"
+              >
+                Get started
+                <span
+                  class="tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2"
+                >
+                  <svg
+                    class="fill-current"
+                    width="12"
+                    height="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
+        </div>
 
+        <!-- Image -->
+        <div
+          class="max-w-sm mx-auto md:max-w-none md:absolute md:left-[600px] md:top-0 -mb-12 md:-mt-12 md:mb-0"
+        >
+          <div class="relative -ml-3 -mr-24 md:mx-0">
+            <img
+              class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mt-16 md:mt-0 pointer-events-none -z-10 max-w-none mix-blend-lighten"
+              src="./images/fintech/hero-illustration.svg"
+              width="960"
+              height="960"
+              aria-hidden="true"
+            />
+            <img
+              src="./images/screenshots/hero-quote.png"
+              class="md:max-w-none rounded-md shadow-2xl"
+              width="548"
+              height="545"
+              alt="Credit card"
+              data-aos="fade-up"
+            />
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 </section>
 
 <!-- Section #1 -->
-<section>
+<section class="mt-6">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="py-12 md:py-28 md:pb-20">
-
-          <!-- Items -->
-          <div class="max-w-sm mx-auto grid gap-12 md:grid-cols-3 md:-mx-9 md:gap-0 items-start md:max-w-none">
-
-              <!-- 1st item -->
-              <div class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden" data-aos="fade-up">
-                  <div class="mb-3">
-                    <img src="./images/icons/heroicons-cursor-arrow-ripple-solid.svg" height="56" width="56"> 
-                  </div>
-                  <h4 class="text-xl font-bold mb-1">Centralized platform</h4>
-                  <p class="text-slate-500">Transparent, version controlled quotes with discount approvals</p>
-              </div>
-
-              <!-- 2nd item -->
-              <div class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden" data-aos="fade-up" data-aos-delay="100">
-                  <div class="mb-3">
-                    <img src="./images/icons/chat-bubble.svg" height="56" width="56"> 
-                  </div>
-                  <h4 class="text-xl font-bold mb-1">Integrated workflows</h4>
-                  <p class="text-slate-500">Collaborative editing and commenting with customers in the same workspace</p>
-              </div>
-
-              <!-- 3rd item -->
-              <div class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden" data-aos="fade-up" data-aos-delay="200">
-                  <div class="mb-3 text-blue-200">
-                      <img src="./images/icons/sparkles.svg" height="56" width="56" class="filter-green"> 
-                  </div>
-                  <h4 class="text-xl font-bold mb-1">Shorter Cycle</h4>
-                  <p class="text-slate-500">0-to-60 with estimator templates and reports</p>
-              </div>
-
+    <div class="py-12 md:py-28 md:pb-20">
+      <!-- Items -->
+      <div
+        class="max-w-sm mx-auto grid gap-12 md:grid-cols-3 md:-mx-9 md:gap-0 items-start md:max-w-none"
+      >
+        <!-- 1st item -->
+        <div
+          class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
+          data-aos="fade-up"
+        >
+          <div class="mb-3">
+            <img
+              src="./images/icons/heroicons-cursor-arrow-ripple-solid.svg"
+              height="56"
+              width="56"
+            />
           </div>
+          <h4 class="text-xl font-bold mb-1">Centralized platform</h4>
+          <p class="text-slate-500">
+            Transparent, version controlled quotes with discount approvals
+          </p>
+        </div>
 
+        <!-- 2nd item -->
+        <div
+          class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="mb-3">
+            <img src="./images/icons/chat-bubble.svg" height="56" width="56" />
+          </div>
+          <h4 class="text-xl font-bold mb-1">Integrated workflows</h4>
+          <p class="text-slate-500">
+            Collaborative editing and commenting with customers in the same
+            workspace
+          </p>
+        </div>
+
+        <!-- 3rd item -->
+        <div
+          class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="mb-3 text-blue-200">
+            <img
+              src="./images/icons/sparkles.svg"
+              height="56"
+              width="56"
+              class="filter-green"
+            />
+          </div>
+          <h4 class="text-xl font-bold mb-1">Shorter Cycle</h4>
+          <p class="text-slate-500">
+            0-to-60 with estimator templates and reports
+          </p>
+        </div>
       </div>
+    </div>
   </div>
 </section>
-
 
 <!-- Section #3 -->
 <section class="mt-6 md:mt-12" data-aos-id-3>
   <div class="relative max-w-7xl mx-auto">
+    <!-- Bg -->
+    <div
+      class="absolute inset-0 rounded-tl-[100px] mb-24 md:mb-0 bg-gradient-to-b from-slate-100 pointer-events-none -z-10"
+      aria-hidden="true"
+    ></div>
 
-      <!-- Bg -->
-      <div class="absolute inset-0 rounded-tl-[100px] mb-24 md:mb-0 bg-gradient-to-b from-slate-100 pointer-events-none -z-10" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="pb-6 pt-12 md:pt-20">
+        <!-- Section content -->
+        <div
+          class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left flex flex-col md:flex-row items-center justify-end"
+        >
+          <!-- Content -->
+          <div class="w-[512px] max-w-full shrink-0 md:order-1">
+            <!-- Copy -->
+            <h2
+              class="h2 mb-4"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-3]"
+              data-aos-delay="100"
+            >
+              Collaborate with customers on pricing
+            </h2>
 
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-          <div class="pb-6 pt-12 md:pt-20">
+            <p
+              class="text-lg text-slate-500 mb-8"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-3]"
+              data-aos-delay="200"
+            >
+              Quickly generate a quote with Aprico and incorporate customer
+              feedback with automated approvals to close the deal quickly. No
+              more out of date spreadsheets and long email chains.
+            </p>
 
-              <!-- Section content -->
-              <div class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left flex flex-col md:flex-row items-center justify-end">
-
-                  <!-- Content -->
-                  <div class="w-[512px] max-w-full shrink-0 md:order-1">
-
-                      <!-- Copy -->
-                      <h2 class="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="100">Collaborate with customers on pricing</h2>
-                      
-                      <p class="text-lg text-slate-500 mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="200">Quickly generate a quote with Aprico and incorporate customer feedback with automated approvals to close the deal quickly. No more out of date spreadsheets and long email chains.</p>
-
-                      <!-- Button -->
-                      
-
-                      <!-- Quote -->
-                      <div class="flex max-w-md mx-auto md:mx-0 text-left" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="300">
-                          <img class="rounded-full self-start shrink-0 mr-3" src="./images/quote-author-02.jpg" width="32" height="32" alt="Quote author 02" />
-                          <div>
-                              <blockquote class="text-slate-500 m-0">
-                                  “ We know the card market very well and this product provides the speed, flexible account model and API-first approach that no one else can. ”
-                              </blockquote>
-                          </div>
-                      </div>
-
-                  </div>
-
-                  <!-- Image -->
-                  <div class="w-full max-w-sm md:max-w-none md:mr-8 mt-8 md:mt-0">
-                      <div class="relative -mx-8 md:mx-0">
-                          <img src="./images/illustrations/Presentation.svg" class="md:max-w-none" width="496" height="496" alt="Features 03" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" />
-                      </div>
-                  </div>
-
-              </div>
-
+            <!-- Button -->
           </div>
-      </div>
 
+          <!-- Image -->
+          <div class="w-full max-w-sm md:max-w-none md:mr-8 mt-8 md:mt-0">
+            <div class="relative -mx-8 md:mx-0">
+              <img
+                src="./images/illustrations/Presentation.svg"
+                class="md:max-w-none"
+                width="496"
+                height="496"
+                alt="Features 03"
+                data-aos="fade-up"
+                data-aos-anchor="[data-aos-id-3]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Section #4 -->
 <section class="mt-6" data-aos-id-4>
   <div class="relative max-w-7xl mx-auto">
+    <!-- Bg -->
+    <div
+      class="absolute inset-0 rounded-tr-[100px] mb-24 md:mb-0 border-2 border-slate-100 pointer-events-none -z-10"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="absolute inset-0 rounded-tr-[100px] mb-24 md:mb-0 bg-gradient-to-t from-white pointer-events-none -z-10"
+      aria-hidden="true"
+    ></div>
 
-      <!-- Bg -->
-      <div class="absolute inset-0 rounded-tr-[100px] mb-24 md:mb-0 border-2 border-slate-100 pointer-events-none -z-10" aria-hidden="true"></div>
-      <div class="absolute inset-0 rounded-tr-[100px] mb-24 md:mb-0 bg-gradient-to-t from-white pointer-events-none -z-10" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="py-12 md:py-20">
+        <!-- Section content -->
+        <div
+          class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left flex flex-col md:flex-row items-center"
+        >
+          <!-- Content -->
+          <div class="w-[512px] max-w-full shrink-0">
+            <!-- Copy -->
+            <h2
+              class="h2 mb-4"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-4]"
+              data-aos-delay="100"
+            >
+              Use flexible industry templates
+            </h2>
+            <p
+              class="text-lg text-slate-500 mb-6"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-4]"
+              data-aos-delay="200"
+            >
+              Use powerful templates with estimated inputs to provide accurate
+              and transparent pricing fast.
+            </p>
 
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-          <div class="py-12 md:py-20">
-
-              <!-- Section content -->
-              <div class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left flex flex-col md:flex-row items-center">
-
-                  <!-- Content -->
-                  <div class="w-[512px] max-w-full shrink-0">
-
-                      <!-- Copy -->
-                      <h2 class="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" data-aos-delay="100">Use flexible industry templates</h2>
-                      <p class="text-lg text-slate-500 mb-6" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" data-aos-delay="200">Use powerful templates with estimated inputs to provide accurate and transparent pricing fast.</p>
-
-                      <!-- Lists -->
-                      <div class="sm:columns-2 mb-8 space-y-8 sm:space-y-0" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" data-aos-delay="300">
-                          <!-- Column #1 -->
-                          <div>
-                              <h5 class="font-bold mb-5">Powerful templates</h5>
-                              <ul class="inline-flex flex-col text-slate-500 space-y-2.5">
-                                <li class="flex items-center">
-                                  <svg class="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                      <circle class="fill-blue-100" cx="10" cy="10" r="10" />
-                                      <path class="fill-blue-500" d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z" />
-                                  </svg>
-                                  <span>Cloud Infrastructure</span>
-                                </li>
-                                  <li class="flex items-center">
-                                      <svg class="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                          <circle class="fill-blue-100" cx="10" cy="10" r="10" />
-                                          <path class="fill-blue-500" d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z" />
-                                      </svg>
-                                      <span>Telemetry</span>
-                                  </li>
-                                  <li class="flex items-center">
-                                    <svg class="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                        <circle class="fill-blue-100" cx="10" cy="10" r="10" />
-                                        <path class="fill-blue-500" d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z" />
-                                    </svg>
-                                    <span>Seats</span>
-                              </li>
-                                
-                              </ul>
-                          </div>
-                          <!-- Column #2 -->
-                          <div>
-                              <h5 class="font-bold mb-5">Integrations</h5>
-                              <ul class="inline-flex flex-col text-slate-500 space-y-2.5">
-                                  <li class="flex items-center">
-                                      <svg class="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                          <circle class="fill-blue-100" cx="10" cy="10" r="10" />
-                                          <path class="fill-blue-500" d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z" />
-                                      </svg>
-                                      <span>Salesforce</span>
-                                  </li>
-                                  <li class="flex items-center">
-                                      <svg class="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                          <circle class="fill-blue-100" cx="10" cy="10" r="10" />
-                                          <path class="fill-blue-500" d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z" />
-                                      </svg>
-                                      <span>DocuSign</span>
-                                  </li>
-                                  <li class="flex items-center">
-                                      <svg class="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                          <circle class="fill-blue-100" cx="10" cy="10" r="10" />
-                                          <path class="fill-blue-500" d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z" />
-                                      </svg>
-                                      <span>Slack</span>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                      
-
-                  </div>
-
-                  <!-- Image -->
-                  <div class="w-full max-w-sm md:max-w-none md:ml-8 mt-8 md:mt-0">
-                      <div class="relative -mx-8 md:mx-0">
-                          <img src="./images/illustrations/Configure.svg" class="md:max-w-none ml-auto" width="496" height="496" alt="Features 04" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" />
-                      </div>
-                  </div>
-
+            <!-- Lists -->
+            <div
+              class="sm:columns-2 mb-8 space-y-8 sm:space-y-0"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-4]"
+              data-aos-delay="300"
+            >
+              <!-- Column #1 -->
+              <div>
+                <h5 class="font-bold mb-5">Powerful templates</h5>
+                <ul class="inline-flex flex-col text-slate-500 space-y-2.5">
+                  <li class="flex items-center">
+                    <svg
+                      class="shrink-0 mr-3"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle class="fill-blue-100" cx="10" cy="10" r="10" />
+                      <path
+                        class="fill-blue-500"
+                        d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
+                      />
+                    </svg>
+                    <span>Cloud Infrastructure</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="shrink-0 mr-3"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle class="fill-blue-100" cx="10" cy="10" r="10" />
+                      <path
+                        class="fill-blue-500"
+                        d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
+                      />
+                    </svg>
+                    <span>Telemetry</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="shrink-0 mr-3"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle class="fill-blue-100" cx="10" cy="10" r="10" />
+                      <path
+                        class="fill-blue-500"
+                        d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
+                      />
+                    </svg>
+                    <span>Seats</span>
+                  </li>
+                </ul>
               </div>
-
+              <!-- Column #2 -->
+              <div>
+                <h5 class="font-bold mb-5">Integrations</h5>
+                <ul class="inline-flex flex-col text-slate-500 space-y-2.5">
+                  <li class="flex items-center">
+                    <svg
+                      class="shrink-0 mr-3"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle class="fill-blue-100" cx="10" cy="10" r="10" />
+                      <path
+                        class="fill-blue-500"
+                        d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
+                      />
+                    </svg>
+                    <span>Salesforce</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="shrink-0 mr-3"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle class="fill-blue-100" cx="10" cy="10" r="10" />
+                      <path
+                        class="fill-blue-500"
+                        d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
+                      />
+                    </svg>
+                    <span>DocuSign</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="shrink-0 mr-3"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle class="fill-blue-100" cx="10" cy="10" r="10" />
+                      <path
+                        class="fill-blue-500"
+                        d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
+                      />
+                    </svg>
+                    <span>Slack</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-      </div>
 
+          <!-- Image -->
+          <div class="w-full max-w-sm md:max-w-none md:ml-8 mt-8 md:mt-0">
+            <div class="relative -mx-8 md:mx-0">
+              <img
+                src="./images/illustrations/Configure.svg"
+                class="md:max-w-none ml-auto"
+                width="496"
+                height="496"
+                alt="Features 04"
+                data-aos="fade-up"
+                data-aos-anchor="[data-aos-id-4]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Section #3 again-->
 <section class="mt-6 md:mt-12" data-aos-id-3>
   <div class="relative max-w-7xl mx-auto">
+    <!-- Bg -->
+    <div
+      class="absolute inset-0 rounded-tl-[100px] mb-24 md:mb-0 bg-gradient-to-b from-slate-100 pointer-events-none -z-10"
+      aria-hidden="true"
+    ></div>
 
-      <!-- Bg -->
-      <div class="absolute inset-0 rounded-tl-[100px] mb-24 md:mb-0 bg-gradient-to-b from-slate-100 pointer-events-none -z-10" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="pb-6 pt-12 md:pt-20">
+        <!-- Section content -->
+        <div
+          class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left flex flex-col md:flex-row items-center justify-end"
+        >
+          <!-- Content -->
+          <div class="w-[512px] max-w-full shrink-0 md:order-1">
+            <!-- Copy -->
+            <h2
+              class="h2 mb-4"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-3]"
+              data-aos-delay="100"
+            >
+              Improve the efficiency of your sales team
+            </h2>
 
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-          <div class="pb-6 pt-12 md:pt-20">
+            <p
+              class="text-lg text-slate-500 mb-8"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-3]"
+              data-aos-delay="200"
+            >
+              Aprico comes with configuration, quoting, presentation, and
+              reporting tools built in so your sales team can focus on closing
+              deals instead of wrestling with outdated tools.
+            </p>
 
-              <!-- Section content -->
-              <div class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left flex flex-col md:flex-row items-center justify-end">
-
-                  <!-- Content -->
-                  <div class="w-[512px] max-w-full shrink-0 md:order-1">
-
-                      <!-- Copy -->
-                      <h2 class="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="100">Improve the efficiency of your sales team</h2>
-                      
-                      <p class="text-lg text-slate-500 mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="200">Aprico comes with configuration, quoting, presentation, and reporting tools built in so your sales team can focus on closing deals instead of wrestling with outdated tools.</p>
-
-                      <!-- Button -->
-                      
-
-                      <!-- Quote -->
-                      <div class="flex max-w-md mx-auto md:mx-0 text-left" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="300">
-                          <img class="rounded-full self-start shrink-0 mr-3" src="./images/quote-author-02.jpg" width="32" height="32" alt="Quote author 02" />
-                          <div>
-                              <blockquote class="text-slate-500 m-0">
-                                  “ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, qui suscipit esse quos animi, tempore, explicabo delectus error deserunt autem blanditiis? Vel dicta quis commodi molestiae doloremque reprehenderit in sit! ”
-                              </blockquote>
-                          </div>
-                      </div>
-
-                  </div>
-
-                  <!-- Image -->
-                  <div class="w-full max-w-sm md:max-w-none md:mr-8 mt-8 md:mt-0">
-                      <div class="relative -mx-8 md:mx-0">
-                          <img src="./images/illustrations/Sales.svg" class="md:max-w-none" width="496" height="496" alt="Features 03" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" />
-                      </div>
-                  </div>
-
-              </div>
-
+            <!-- Button -->
           </div>
-      </div>
 
+          <!-- Image -->
+          <div class="w-full max-w-sm md:max-w-none md:mr-8 mt-8 md:mt-0">
+            <div class="relative -mx-8 md:mx-0">
+              <img
+                src="./images/illustrations/Sales.svg"
+                class="md:max-w-none"
+                width="496"
+                height="496"
+                alt="Features 03"
+                data-aos="fade-up"
+                data-aos-anchor="[data-aos-id-3]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Section #7 -->
 
-
 <!-- FAQs -->
-
 
 <!-- CTA -->
 <section class="relative">
-
   <!-- Bg -->
   <div class="absolute inset-0 bg-slate-800 -z-10" aria-hidden="true"></div>
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6" data-aos="fade-up">
-      <div class="py-12 md:py-20">
+    <div class="py-12 md:py-20">
+      <div class="sm:flex sm:flex-col lg:flex-row justify-between items-center">
+        <!-- CTA content -->
+        <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
+          <p class="text-xl text-blue-500 font-[550] mb-3">
+            What are you waiting for?
+          </p>
+          <h2 class="h2 text-slate-100">Start closing deals faster</h2>
+        </div>
 
-          <div class="sm:flex sm:flex-col lg:flex-row justify-between items-center">
-
-              <!-- CTA content -->
-              <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
-                  <p class="text-xl text-blue-500 font-[550] mb-3">What are you waiting for?</p>
-                  <h2 class="h2 text-slate-100">Start closing deals faster</h2>
-              </div>
-              
-              <!-- Buttons -->
-              <div class="shrink-0">
-                  <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-0">
-                      <div>
-                          <a class="btn-sm w-full inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm" href="contact">
-                              Get started
-                              <span class="tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
-                                  <svg class="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
-                                  </svg>
-                              </span>
-                          </a>
-                      </div>
-                      <div>
-                          <a class="btn-sm w-full inline-flex items-center text-white bg-slate-700 hover:bg-slate-800 shadow-sm relative before:absolute before:inset-0 before:bg-blue-400 before:bg-opacity-60 before:-z-10 before:rounded-full" href="#0">Get in touch</a>
-                      </div>
-                  </div>
-              </div>
-
+        <!-- Buttons -->
+        <div class="shrink-0">
+          <div
+            class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-0"
+          >
+            <div>
+              <a
+                class="btn-sm w-full inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm"
+                href="contact"
+              >
+                Get started
+                <span
+                  class="tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2"
+                >
+                  <svg
+                    class="fill-current"
+                    width="12"
+                    height="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
-
+        </div>
       </div>
-
+    </div>
   </div>
 </section>
-{{ end }}  
+{{ end }}
