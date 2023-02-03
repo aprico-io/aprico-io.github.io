@@ -2,11 +2,11 @@
 title: Get in touch
 layout: contact
 
-FeatureTitle: "Hello World"
+FeatureTitle: "Present and close deals faster"
 Features:
-  - Feature A
-  - Feature B
-  - Feature C
+  - Collaborate with customers on pricing
+  - Use flexible industry templates
+  - Improve the efficiency of your sales team
 ---
 
 We are actively conducting early stage user testing. We’d love to get in touch with you and show you a demo.

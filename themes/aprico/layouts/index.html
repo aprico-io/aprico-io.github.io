@@ -21,7 +21,7 @@
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Present and close deals
+            {{ .Params.HeroSection.Title }}
             <span class="relative inline-flex items-center justify-center">
               <svg
                 class="absolute -z-10"
@@ -35,7 +35,7 @@
                   fill-rule="nonzero"
                 />
               </svg>
-              faster
+              {{ .Params.HeroSection.BreakWord }}
             </span>
           </h1>
           <p
@@ -44,8 +44,9 @@
             data-aos-delay="200"
           >
             Aprico simplifies the process of closing usage-based deals
+            {{.Params.HeroSection.TextTop}}
             <br class="hidden md:block" />
-            by eliminating obstacles in quoting and negotiation stages
+            {{.Params.HeroSection.TextBot}}
           </p>
 
           <!-- Buttons -->
@@ -114,59 +115,19 @@
       <div
         class="max-w-sm mx-auto grid gap-12 md:grid-cols-3 md:-mx-9 md:gap-0 items-start md:max-w-none"
       >
+        {{ range .Params.FirstSection }}
         <!-- 1st item -->
         <div
           class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
           data-aos="fade-up"
         >
           <div class="mb-3">
-            <img
-              src="./images/icons/heroicons-cursor-arrow-ripple-solid.svg"
-              height="56"
-              width="56"
-            />
+            <img src="./images/icons/{{.Icon}}.svg" height="56" width="56" />
           </div>
-          <h4 class="text-xl font-bold mb-1">Centralized platform</h4>
-          <p class="text-slate-500">
-            Transparent, version controlled quotes with discount approvals
-          </p>
+          <h4 class="text-xl font-bold mb-1">{{.Title}}</h4>
+          <p class="text-slate-500">{{.Text}}</p>
         </div>
-
-        <!-- 2nd item -->
-        <div
-          class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="mb-3">
-            <img src="./images/icons/chat-bubble.svg" height="56" width="56" />
-          </div>
-          <h4 class="text-xl font-bold mb-1">Integrated workflows</h4>
-          <p class="text-slate-500">
-            Collaborative editing and commenting with customers in the same
-            workspace
-          </p>
-        </div>
-
-        <!-- 3rd item -->
-        <div
-          class="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-slate-200 last:after:hidden"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div class="mb-3 text-blue-200">
-            <img
-              src="./images/icons/sparkles.svg"
-              height="56"
-              width="56"
-              class="filter-green"
-            />
-          </div>
-          <h4 class="text-xl font-bold mb-1">Shorter Cycle</h4>
-          <p class="text-slate-500">
-            0-to-60 with estimator templates and reports
-          </p>
-        </div>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -196,7 +157,7 @@
               data-aos-anchor="[data-aos-id-3]"
               data-aos-delay="100"
             >
-              Collaborate with customers on pricing
+              {{.Params.SectionOne.Title}}
             </h2>
 
             <p
@@ -205,9 +166,7 @@
               data-aos-anchor="[data-aos-id-3]"
               data-aos-delay="200"
             >
-              Quickly generate a quote with Aprico and incorporate customer
-              feedback with automated approvals to close the deal quickly. No
-              more out of date spreadsheets and long email chains.
+              {{.Params.SectionOne.Text}}
             </p>
 
             <!-- Button -->
@@ -261,7 +220,7 @@
               data-aos-anchor="[data-aos-id-4]"
               data-aos-delay="100"
             >
-              Use flexible industry templates
+              {{.Params.SectionTwo.Title}}
             </h2>
             <p
               class="text-lg text-slate-500 mb-6"
@@ -269,8 +228,7 @@
               data-aos-anchor="[data-aos-id-4]"
               data-aos-delay="200"
             >
-              Use powerful templates with estimated inputs to provide accurate
-              and transparent pricing fast.
+              {{.Params.SectionTwo.Text}}
             </p>
 
             <!-- Lists -->
@@ -429,7 +387,7 @@
               data-aos-anchor="[data-aos-id-3]"
               data-aos-delay="100"
             >
-              Improve the efficiency of your sales team
+              {{.Params.SectionThree.Title}}
             </h2>
 
             <p
@@ -438,9 +396,7 @@
               data-aos-anchor="[data-aos-id-3]"
               data-aos-delay="200"
             >
-              Aprico comes with configuration, quoting, presentation, and
-              reporting tools built in so your sales team can focus on closing
-              deals instead of wrestling with outdated tools.
+              {{.Params.SectionThree.Text}}
             </p>
 
             <!-- Button -->
@@ -481,9 +437,9 @@
         <!-- CTA content -->
         <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
           <p class="text-xl text-blue-500 font-[550] mb-3">
-            What are you waiting for?
+            {{.Params.FooterSection.Subtitle}}
           </p>
-          <h2 class="h2 text-slate-100">Start closing deals faster</h2>
+          <h2 class="h2 text-slate-100">{{.Params.FooterSection.Title}}</h2>
         </div>
 
         <!-- Buttons -->
