@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
+  <script
+    charset="utf-8"
+    type="text/javascript"
+    src="//js.hsforms.net/forms/embed/v2.js"
+  ></script>
+  <style>
+    .hs-button {
+      background-color: rgb(59, 130, 246) !important;
+    }
+  </style>
   <body class="font-aspekta antialiased bg-white text-slate-800 font-[350]">
     <!-- Page wrapper -->
     <div class="flex flex-col min-h-screen overflow-hidden">
@@ -65,114 +75,13 @@
                       <div class="">
                         <h1 class="h4 mb-4">{{.Title}}</h1>
                       </div>
-                      <form
-                        name="contact"
-                        class="contact-form"
-                        action="/"
-                        method="POST"
-                        data-netlify="true"
-                      >
-                        <div class="space-y-4">
-                          <input
-                            type="hidden"
-                            name="form-name"
-                            value="contact"
-                          />
-                          <!-- Name -->
-                          <div
-                            class="sm:flex items-start justify-between sm:space-x-4"
-                          >
-                            <label
-                              class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                              for="Name"
-                              >Name</label
-                            >
-                            <div class="sm:w-72 xl:w-80 shrink-0">
-                              <input
-                                id="contact-form-name"
-                                name="Name"
-                                class="form-input text-sm py-2 w-full form-control input-md"
-                                type="text"
-                                placeholder="Name"
-                                autocomplete="off"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <!-- Email -->
-                          <div
-                            class="sm:flex items-start justify-between sm:space-x-4"
-                          >
-                            <label
-                              class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                              for="Email"
-                              >Email</label
-                            >
-                            <div class="sm:w-72 xl:w-80 shrink-0">
-                              <input
-                                id="contact-form-email"
-                                name="Email"
-                                class="form-input text-sm py-2 w-full form-control input-md"
-                                type="email"
-                                placeholder="name@example.com"
-                                autocomplete="off"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <!-- Company Size-->
-                          <div
-                            class="sm:flex items-start justify-between sm:space-x-4"
-                          >
-                            <label
-                              class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                              for="company-size"
-                              >Company size</label
-                            >
-                            <div class="sm:w-72 xl:w-80 shrink-0">
-                              <select
-                                id="company-size"
-                                name="company-size"
-                                class="form-select text-sm py-2 w-full form-control"
-                                required
-                              >
-                                <option value="lt10">Less than 10</option>
-                                <option value="mt10">More than 10</option>
-                                <option value="mt20">More than 20</option>
-                                <option value="mt50">More than 50</option>
-                              </select>
-                            </div>
-                          </div>
-                          <!-- Textarea-->
-                          <div
-                            class="sm:flex items-start justify-between sm:space-x-4"
-                          >
-                            <label
-                              class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                              for="comment"
-                              >How can we help?</label
-                            >
-                            <div class="sm:w-72 xl:w-80 shrink-0">
-                              <textarea
-                                id="comment"
-                                name="comment"
-                                class="form-textarea text-sm py-2 w-full form-control"
-                                rows="4"
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div class="mt-6 text-right">
-                            <button
-                              class="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm"
-                              type="submit"
-                              value="Submit"
-                              id="Form-submit"
-                            >
-                              Submit
-                            </button>
-                          </div>
-                        </div>
-                      </form>
+                      <script>
+                        hbspt.forms.create({
+                          region: "na1",
+                          portalId: "39814668",
+                          formId: "5f123b63-6a87-40e9-8e78-260d80366ae1",
+                        });
+                      </script>
                     </div>
                   </div>
                 </div>

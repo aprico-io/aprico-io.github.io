@@ -1,4 +1,4 @@
-baseURL = 'https://aprico-io.github.io'
+baseURL = 'https://aprico.io'
 languageCode = 'en-us'
 title = 'Aprico'
 theme = 'aprico'
